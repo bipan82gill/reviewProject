@@ -56,8 +56,8 @@ const reviews = [
 
   });
   //show person based on item 
-  function showPerson(person){
-      const item = reviews[person]
+  function showPerson(){
+      const item = reviews[currentItem]
       img.src= item.img;
       author.textContent = item.name;
       job.textContent = item.job;
@@ -77,5 +77,10 @@ prevBtn.addEventListener('click', function(){
     if(currentItem < 0){
         currentItem = reviews.length -1;
     }
+    showPerson(currentItem);
+})
+// show random person 
+randomBtn.addEventListener('click', function(){
+    currentItem = Math.floor(Math.random()* reviews.length)
     showPerson(currentItem);
 })

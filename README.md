@@ -5,5 +5,5 @@ This app is design to show reviews of different persons. By using next , previou
 HTML, CSS3, JavaScript
 
 # Demo
-[!](review.jpg);
-[!](review-project.gif);
+![](review.jpg)
+![](review-project.gif)

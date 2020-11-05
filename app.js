@@ -51,11 +51,15 @@ const reviews = [
   // load initial items
 
   window.addEventListener("DOMContentLoaded", function (){
-      const item = reviews[currentItem]
-      img.src=item.img;
-      author.textContent= item.name;
-      job.textContent = item.job;
-      info.textContent = item.text;
-      
+        showPerson(currentItem);
+
 
   });
+  //show person based on item 
+  function showPerson(person){
+      const item = reviews[person]
+      img.src= item.img;
+      author.textContent = item.name;
+      job.textContent = item.job;
+      info.textContent = item.text;
+  }
